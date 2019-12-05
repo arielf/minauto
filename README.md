@@ -6,13 +6,13 @@ One node is called the "start state" and a subset of nodes is called "accepting"
 
 #### More formally: a DFA is a quintuple:
 
-    1) A set of nodes (the states): `N[i] ...`
-    2) A set of inputs (sometimes called the alphabet): `I[i] ...`
-    3) A set of labeled edges: `E[i]`
-       each edge is a triple:  `(Ni, Ij, Nk)`
-       (there's a transition from node `Ni` to node `Nk` on input `Ij`)
-    4) One node which is the start state: `Ns`
-    5) A subset of `N[i]`:  `N[a] ...` (the accepting states)
+  1) A set of nodes (the states): `N[i] ...`
+  2) A set of inputs (sometimes called the alphabet): `I[i] ...`
+  3) A set of labeled edges: `E[i]`.
+    Each edge is a triple:  `(Ni, Ij, Nk)`
+    (there's a transition from node `Ni` to node `Nk` on input `Ij`)
+  4) One node which is the start state: `Ns`
+  5) A subset of `N[i]`:  `N[a] ...` (the accepting states)
 
 Where there cannot be more than one transition on the same input from the same state (thus "deterministic")
 
