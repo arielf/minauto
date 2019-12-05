@@ -1,0 +1,61 @@
+DFA (Deterministic Finite-State Automaton) minimization
+-------------------------------------------------------
+
+A DFA consists of a directed labeled graph. The nodes
+are called "states" and each labeled edge represents
+a transition from one state to another on a certain input
+(the label of the edge). One node is called the "start state"
+and a set of nodes is called "accepting" or "end" states.
+
+More formally: a DFA is a quintuple:
+    1) A set of nodes (the states): N[i] ...
+    2) A set of inputs (sometimes called the alphabet): I[i] ...
+    3) A set of labeled edges: E[i]
+       each edge is a triple:  (Ni, Ij, Nk)
+       (there's a transition from node Ni to Node Nk on input Ij)
+    4) One node which is the start state: Ns
+    5) A subset of N[i]:  N[a] ...
+       (the accepting states)
+
+Where there cannot be more than one transition on the same
+input from the same state (thus "deterministic")
+
+-----
+A convenient way to represent a DFA is a matrix of states
+
+	M[i][j]
+
+whose row index (i) represents a state, and the column index (j)
+represents an alphabet (input) symbol.
+The DFA goes from state i, to state M[i][j] on input symbol j.
+One state is the start state, and a set of states is defined
+as the set of accepting states.
+
+Additional definitions:
+
+	A word is an ordered set of inputs I1, ..., In
+	A language is a (posibly infinite) set of words
+
+A DFA is said to recognize a language if for every word in
+the language, the DFA goes from the start state to one of the
+accepting (end) states. i.e. every word in the language, when
+broken into its alphabet symbols and fed as inputs to the DFA
+the DFA would go from the start state through zero or more
+possible transitions until the word is fully consumed and the
+last input causes the DFA to reach an accepting state.
+
+Two DFAs are equivalent iff they accept the same language.
+
+A minimal DFA is a DFA that accepts a language but there's
+no smaller DFA, in terms of numbers of states to accept
+this language.
+
+The program is well documented, and some example inputs
+and outputs are given.
+
+DFA minimization is interesting since it is based on a few
+classic algorithms such as finding a transitive closure, and
+union-find (building equivalent classes) operations.
+
+--
+Ariel Faigon
