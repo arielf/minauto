@@ -1,0 +1,21 @@
+Some examples of inputs and outputs of the DFA minimization program.
+
+Each input file inp.X corresponds to output file out.X
+
+Notes:
+
+	The start state is always called 's0'
+
+	states in general are maked 'sN', i.e. the letter 's'
+	followed by some number.
+
+	Accepting states are marked 'AN', i.e the letter 'A'
+	followed by some number.
+
+	For convenience, the input symbols are called 'a', 'b', 'c', ...
+
+	The input matrices may be sparse: undefined transitions
+	(illegal input to a certain state) are marked by a '-' (dash)
+	Going into an illegal state means that the input word is not
+	in the language defined by the DFA.
+

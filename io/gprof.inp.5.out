@@ -1,0 +1,128 @@
+
+granularity: each sample hit covers 4 byte(s) no time propagated
+
+                                  called/total       parents 
+index  %time    self descendents  called+self    name    	index
+                                  called/total       children
+
+                0.00        0.00      13/329         compress_dfa [7]
+                0.00        0.00      46/329         update_partitions [4]
+                0.00        0.00      58/329         Union [3]
+                0.00        0.00     104/329         partition [6]
+                0.00        0.00     108/329         same_transitions [2]
+[1]      0.0    0.00        0.00     329         find [1]
+
+-----------------------------------------------
+
+                0.00        0.00      32/32          partition [6]
+[2]      0.0    0.00        0.00      32         same_transitions [2]
+                0.00        0.00     108/329         find [1]
+
+-----------------------------------------------
+
+                0.00        0.00      11/29          init_partitions [10]
+                0.00        0.00      18/29          partition [6]
+[3]      0.0    0.00        0.00      29         Union [3]
+                0.00        0.00      58/329         find [1]
+
+-----------------------------------------------
+
+                0.00        0.00       8/8           partition [6]
+[4]      0.0    0.00        0.00       8         update_partitions [4]
+                0.00        0.00      46/329         find [1]
+
+-----------------------------------------------
+
+                0.00        0.00       2/2           process_file [13]
+[5]      0.0    0.00        0.00       2         output_dfa [5]
+
+-----------------------------------------------
+
+                0.00        0.00       2/2           minimize_dfa [12]
+[6]      0.0    0.00        0.00       2         partition [6]
+                0.00        0.00     104/329         find [1]
+                0.00        0.00      32/32          same_transitions [2]
+                0.00        0.00      18/29          Union [3]
+                0.00        0.00       8/8           update_partitions [4]
+
+-----------------------------------------------
+
+                0.00        0.00       1/1           minimize_dfa [12]
+[7]      0.0    0.00        0.00       1         compress_dfa [7]
+                0.00        0.00      13/329         find [1]
+
+-----------------------------------------------
+
+                0.00        0.00       1/1           minimize_dfa [12]
+[8]      0.0    0.00        0.00       1         find_dead_states [8]
+                0.00        0.00       1/1           init_connections [9]
+                0.00        0.00       1/1           t_closure [14]
+
+-----------------------------------------------
+
+                0.00        0.00       1/1           find_dead_states [8]
+[9]      0.0    0.00        0.00       1         init_connections [9]
+
+-----------------------------------------------
+
+                0.00        0.00       1/1           minimize_dfa [12]
+[10]     0.0    0.00        0.00       1         init_partitions [10]
+                0.00        0.00      11/29          Union [3]
+
+-----------------------------------------------
+
+                0.00        0.00       1/1           process_file [13]
+[11]     0.0    0.00        0.00       1         input_dfa [11]
+
+-----------------------------------------------
+
+                0.00        0.00       1/1           process_file [13]
+[12]     0.0    0.00        0.00       1         minimize_dfa [12]
+                0.00        0.00       2/2           partition [6]
+                0.00        0.00       1/1           init_partitions [10]
+                0.00        0.00       1/1           compress_dfa [7]
+                0.00        0.00       1/1           find_dead_states [8]
+
+-----------------------------------------------
+
+                0.00        0.00       1/1           main [25]
+[13]     0.0    0.00        0.00       1         process_file [13]
+                0.00        0.00       2/2           output_dfa [5]
+                0.00        0.00       1/1           input_dfa [11]
+                0.00        0.00       1/1           minimize_dfa [12]
+
+-----------------------------------------------
+
+                0.00        0.00       1/1           find_dead_states [8]
+[14]     0.0    0.00        0.00       1         t_closure [14]
+
+-----------------------------------------------
+
+
+
+granularity: each sample hit covers 4 byte(s) no time accumulated
+
+   %  cumulative    self              self    total          
+ time   seconds   seconds    calls  ms/call  ms/call name    
+  0.0       0.00     0.00      329     0.00     0.00  find [1]
+  0.0       0.00     0.00       32     0.00     0.00  same_transitions [2]
+  0.0       0.00     0.00       29     0.00     0.00  Union [3]
+  0.0       0.00     0.00        8     0.00     0.00  update_partitions [4]
+  0.0       0.00     0.00        2     0.00     0.00  output_dfa [5]
+  0.0       0.00     0.00        2     0.00     0.00  partition [6]
+  0.0       0.00     0.00        1     0.00     0.00  compress_dfa [7]
+  0.0       0.00     0.00        1     0.00     0.00  find_dead_states [8]
+  0.0       0.00     0.00        1     0.00     0.00  init_connections [9]
+  0.0       0.00     0.00        1     0.00     0.00  init_partitions [10]
+  0.0       0.00     0.00        1     0.00     0.00  input_dfa [11]
+  0.0       0.00     0.00        1     0.00     0.00  minimize_dfa [12]
+  0.0       0.00     0.00        1     0.00     0.00  process_file [13]
+  0.0       0.00     0.00        1     0.00     0.00  t_closure [14]
+
+Index by function name
+
+   [3] Union                [10] init_partitions      [13] process_file       
+   [7] compress_dfa         [11] input_dfa             [2] same_transitions   
+   [1] find                 [12] minimize_dfa         [14] t_closure          
+   [8] find_dead_states      [5] output_dfa            [4] update_partitions  
+   [9] init_connections      [6] partition          

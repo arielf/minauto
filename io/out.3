@@ -1,0 +1,24 @@
+
+------- Original  DFA -------
+
+         a    b    c    d    e    f    g    h    i    j    
+
+s0       s0   s1   s2   -    s0   -    -    A4   s0   A4   
+s1       -    -    -    A4   s2   -    s0   s2   s1   s1   
+s2       A4   s2   A4   A4   A4   -    s1   s0   s0   -    
+A3       s2   s0   s1   A4   s2   -    s2   s2   s2   s2   
+A4       s0   s1   -    s2   A4   -    A4   A4   A4   A4   
+
+Initial state: s0
+
+
+------- Minimized DFA -------
+
+         a    b    c    d    e    f    g    h    i    j    
+
+s0       s0   s1   s2   -    s0   -    -    A4   s0   A4   
+s1       -    -    -    A4   s2   -    s0   s2   s1   s1   
+s2       A4   s2   A4   A4   A4   -    s1   s0   s0   -    
+A4       s0   s1   -    s2   A4   -    A4   A4   A4   A4   
+
+Initial state: s0

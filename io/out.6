@@ -1,0 +1,51 @@
+
+------- Original  DFA -------
+
+         a    b    c    d    e    f    g    h    i    j    
+
+s0       s0   s1   s2   -    s0   -    -    A4   A29  A4   
+s1       s1   -    -    A4   s2   -    s0   s2   s1   s1   
+s2       s2   s2   A4   A4   A4   -    s1   s0   s0   -    
+A3       A3   s0   s1   A4   s2   -    s2   s2   s2   s2   
+A4       s0   s1   -    s2   A4   -    A4   A4   A4   A4   
+s5       s0   s1   s2   -    s0   -    -    A4   s0   A4   
+s6       -    -    -    A4   s2   -    s0   s2   s1   s1   
+s7       A4   s2   A4   A4   A4   -    s1   s0   s0   -    
+s8       s2   s0   s1   s14  s2   -    s2   s2   s2   s2   
+s9       s0   A29  -    s2   A4   -    A4   A4   s14  A4   
+s10      s0   s1   s2   -    s0   -    -    A4   s0   A4   
+s11      -    -    -    A4   s2   -    s0   s2   s1   s1   
+s12      A4   s2   A4   A4   A4   -    s1   s0   s0   -    
+s13      s17  s0   s1   A4   s2   -    s2   A29  s2   s2   
+s14      s0   s1   -    s2   A4   -    A4   A4   A4   A4   
+s15      s0   s1   s2   -    s0   -    -    A4   A29  A4   
+s16      -    -    -    s24  s2   -    s0   s2   s1   s1   
+s17      A4   s2   A4   A4   A4   -    s1   s0   s0   -    
+s18      s2   s0   s1   A4   s2   -    s2   s24  s9   s2   
+s19      s0   s1   -    s2   A4   -    A4   A4   A4   A4   
+s20      s0   s1   s2   -    s0   -    -    A4   s0   A4   
+s21      -    -    -    A4   s2   -    s0   s2   s1   s1   
+s22      A4   s2   A4   A4   A4   -    s1   s0   s0   -    
+s23      s2   s0   s1   A4   s2   -    s2   s2   A29  s2   
+s24      s0   s1   -    s2   A4   -    A4   A4   s7   A4   
+s25      s0   s1   s2   -    s0   -    -    A4   s0   A4   
+s26      -    -    -    A4   s2   -    s0   s2   s1   s1   
+s27      A4   s2   A4   A4   A4   -    s1   s0   s0   -    
+s28      s25  s0   s1   s26  s2   -    s2   s2   s28  s2   
+A29      s22  s1   -    s2   A4   -    A4   A4   A4   A4   
+
+Initial state: s0
+
+
+------- Minimized DFA -------
+
+         a    b    c    d    e    f    g    h    i    j    
+
+s0       s0   -    -    A3   s1   -    s10  s1   s0   s0   
+s1       s1   s1   A3   A3   A3   -    s0   s10  s10  -    
+A3       s10  s0   -    s1   A3   -    A3   A3   A3   A3   
+s8       A3   s1   A3   A3   A3   -    s0   s10  s10  -    
+s10      s10  s0   s1   -    s10  -    -    A3   A17  A3   
+A17      s8   s0   -    s1   A3   -    A3   A3   A3   A3   
+
+Initial state: s10

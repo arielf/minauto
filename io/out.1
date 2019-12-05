@@ -1,0 +1,34 @@
+
+------- Original  DFA -------
+
+         a    b    
+
+s0       A1   s12  
+A1       s5   A9   
+s2       A7   s12  
+s3       s5   A11  
+A4       s10  A9   
+s5       A1   s3   
+s6       s0   A1   
+A7       s10  A11  
+s8       s5   A9   
+A9       A4   s12  
+s10      A1   s8   
+A11      A7   s12  
+s12      A1   s10  
+
+Initial state: s0
+
+
+------- Minimized DFA -------
+
+         a    b    
+
+s0       A1   s6   
+A1       s4   A5   
+s3       s4   A5   
+s4       A1   s3   
+A5       A1   s6   
+s6       A1   s4   
+
+Initial state: s0
